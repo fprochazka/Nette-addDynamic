@@ -12,11 +12,9 @@ common:
 		# default_charset: "UTF-8"
 
 	services:
-		authenticator: 
+		authenticator:
 			class: UsersModel
-			
-		robotLoader:
-			run: true
+
 
 production < common:
 
