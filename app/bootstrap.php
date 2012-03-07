@@ -20,27 +20,26 @@ require LIBS_DIR . '/Nette/loader.php';
 Debugger::$strictMode = TRUE;
 Debugger::enable();
 
-
 // Load configuration from config.neon file
-$configurator = new Nette\Configurator;
-$configurator->loadConfig(__DIR__ . '/config.neon');
+$configurator = new Nette\Config\Configurator;
+$configurator->setTempDirectory(TEMP_DIR);
 
+# Enable Nette Debugger for error visualisation & logging
+$configurator->enableDebugger();
 
-// Configure application
-$application = $configurator->container->application;
-$application->errorPresenter = 'Error';
-//$application->catchExceptions = TRUE;
+$configurator->createRobotLoader()
+	->addDirectory(APP_DIR)
+	->addDirectory(LIBS_DIR)
+	->register();
 
+$configurator->addConfig(__DIR__ . '/config.neon');
 
-// Setup router
-$application->onStartup[] = function() use ($application) {
-	$router = $application->getRouter();
+$container = $configurator->createContainer();
 
-	$router[] = new Route('index.php', 'Homepage:default', Route::ONE_WAY);
+$router = $container->router;
+$router[] = new Route('index.php', 'Homepage:default', Route::ONE_WAY);
+$router[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
 
-	$router[] = new Route('<presenter>/<action>[/<id>]', 'Homepage:default');
-};
-
-
-// Run the application!
+# Configure and run the application!
+$application = $container->application;
 $application->run();
