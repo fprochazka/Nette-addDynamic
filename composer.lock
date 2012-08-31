@@ -1,0 +1,25 @@
+{
+    "hash": "c608ddef72e822b2f6e833fd992d23a7",
+    "packages": [
+        {
+            "package": "nette/nette",
+            "version": "dev-master",
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
+        },
+        {
+            "package": "nette/nette",
+            "version": "dev-master",
+            "source-reference": "1bc4260a7e8d2b13dffb594395326169ec7551df",
+            "commit-date": "1346341722"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "nette/nette": 20
+    }
+}
