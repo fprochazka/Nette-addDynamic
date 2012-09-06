@@ -1,17 +1,23 @@
 {
-    "hash": "c608ddef72e822b2f6e833fd992d23a7",
+    "hash": "01196fde3a60d39fcf94d8bc684801d4",
     "packages": [
         {
-            "package": "nette/nette",
+            "package": "kdyby/bootstrap-form-renderer",
             "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
+            "source-reference": "0e2b5c90da68083b7d96183fbcf6ae8bec8fd74a",
+            "commit-date": "1346586012"
+        },
+        {
+            "package": "kdyby/forms-replicator",
+            "version": "dev-master",
+            "source-reference": "7ae4bd3181443aca1a9a17e88b7a8df6324fd6f9",
+            "commit-date": "1346494553"
         },
         {
             "package": "nette/nette",
             "version": "dev-master",
-            "source-reference": "1bc4260a7e8d2b13dffb594395326169ec7551df",
-            "commit-date": "1346341722"
+            "source-reference": "c8578f2b0fb5c1310563a4ce2216facb76eebb5b",
+            "commit-date": "1346860759"
         }
     ],
     "packages-dev": null,
@@ -20,6 +26,8 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "nette/nette": 20
+        "nette/nette": 20,
+        "kdyby/forms-replicator": 20,
+        "kdyby/bootstrap-form-renderer": 20
     }
 }
