@@ -9,18 +9,6 @@ use Nette\Forms\Controls\SubmitButton;
 class HomepagePresenter extends BasePresenter
 {
 
-	protected function startup()
-	{
-		parent::startup();
-		if (!class_exists('Kdyby\Forms\Containers\Replicator')) {
-			throw new \Exception("Download the replicator from https://github.com/Kdyby/Framework/blob/master/libs/Kdyby/Forms/Containers/Replicator.php");
-		}
-
-		Kdyby\Forms\Containers\Replicator::register();
-	}
-
-
-
 	public function actionDefault()
 	{
 		if ($values = $this->getSession('values')->users) {
@@ -64,7 +52,7 @@ class HomepagePresenter extends BasePresenter
 				->addRemoveOnClick($invalidateCallback);
 		}, 1);
 
-		/** @var \Kdyby\Forms\Containers\Replicator $replicator */
+		/** @var \Kdyby\Extension\Forms\Replicator\Replicator $replicator */
 		$replicator->addSubmit('add', 'Přidat dalšího')
 			->addCreateOnClick($invalidateCallback);
 
