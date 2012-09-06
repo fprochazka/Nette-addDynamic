@@ -4,8 +4,8 @@
         {
             "package": "kdyby/bootstrap-form-renderer",
             "version": "dev-master",
-            "source-reference": "0e2b5c90da68083b7d96183fbcf6ae8bec8fd74a",
-            "commit-date": "1346586012"
+            "source-reference": "bce1db2fe07c22899e07605d58ce1dc9e3bf3409",
+            "commit-date": "1346950854"
         },
         {
             "package": "kdyby/forms-replicator",
