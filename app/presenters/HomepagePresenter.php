@@ -81,7 +81,11 @@ class HomepagePresenter extends BasePresenter
 	{
 		// jenom naplnění šablony, bez přesměrování
 		$this->getSession('values')->users = $button->form->values;
-		$this->redirect('this');
+		if ($this->isAjax()) {
+			$this->invalidateControl('result');
+		} else {
+			$this->redirect('this');
+		}
 	}
 
 }
