@@ -1,5 +1,5 @@
 {
-    "hash": "ae9106af01ed2b6baef27a6c99541c5d",
+    "hash": "907079307421e6abf10be60a33d02759",
     "packages": [
         {
             "name": "kdyby/bootstrap-form-renderer",
@@ -107,12 +107,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/nette/nette",
-                "reference": "56b68abaf6a6c48196ffdddc7d8390a3bccc17a0"
+                "reference": "ba87165c69a9b2a96c44fcc452e16d6d12515825"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/nette/nette/archive/56b68abaf6a6c48196ffdddc7d8390a3bccc17a0.zip",
-                "reference": "56b68abaf6a6c48196ffdddc7d8390a3bccc17a0",
+                "url": "https://github.com/nette/nette/archive/ba87165c69a9b2a96c44fcc452e16d6d12515825.zip",
+                "reference": "ba87165c69a9b2a96c44fcc452e16d6d12515825",
                 "shasum": ""
             },
             "require": {
@@ -130,7 +130,7 @@
                 "ext-gd": "*",
                 "ext-fileinfo": "*"
             },
-            "time": "2012-11-08 23:56:14",
+            "time": "2012-12-02 12:47:53",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -143,6 +143,7 @@
                     "Nette/loader.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -180,7 +181,7 @@
     "aliases": [
 
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "kdyby/forms-replicator": 20,
         "kdyby/bootstrap-form-renderer": 20
