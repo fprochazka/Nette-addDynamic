@@ -1,5 +1,5 @@
 {
-    "hash": "01196fde3a60d39fcf94d8bc684801d4",
+    "hash": "ae9106af01ed2b6baef27a6c99541c5d",
     "packages": [
         {
             "name": "kdyby/bootstrap-form-renderer",
@@ -8,22 +8,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/FormsBootstrapRendererExtension",
-                "reference": "8bce382f85c2d442491247952e479b58ba740fa1"
+                "reference": "3bd15743e4f6bd9bfffffd3b134e91fb52af1e90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Kdyby/FormsBootstrapRendererExtension/archive/8bce382f85c2d442491247952e479b58ba740fa1.zip",
-                "reference": "8bce382f85c2d442491247952e479b58ba740fa1",
+                "url": "https://github.com/Kdyby/FormsBootstrapRendererExtension/archive/3bd15743e4f6bd9bfffffd3b134e91fb52af1e90.zip",
+                "reference": "3bd15743e4f6bd9bfffffd3b134e91fb52af1e90",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
                 "nette/nette": "*"
             },
             "conflict": {
                 "kdyby/framework": "self.version"
             },
-            "time": "1349860238",
+            "time": "2012-11-28 15:39:48",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -31,6 +30,7 @@
                     "Kdyby\\Extension\\Forms\\BootstrapRenderer": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -57,22 +57,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Kdyby/ReplicatorExtension",
-                "reference": "17757eff829e67a7f21f986aa5a99cafa5ded0b3"
+                "reference": "cc66d03b822927027bf314843b36b162d5c57b15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Kdyby/ReplicatorExtension/archive/17757eff829e67a7f21f986aa5a99cafa5ded0b3.zip",
-                "reference": "17757eff829e67a7f21f986aa5a99cafa5ded0b3",
+                "url": "https://github.com/Kdyby/ReplicatorExtension/archive/cc66d03b822927027bf314843b36b162d5c57b15.zip",
+                "reference": "cc66d03b822927027bf314843b36b162d5c57b15",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2",
                 "nette/nette": "*"
             },
             "conflict": {
                 "kdyby/framework": "self.version"
             },
-            "time": "1347014305",
+            "time": "2012-11-11 22:39:01",
             "type": "library",
             "installation-source": "source",
             "autoload": {
@@ -80,6 +79,7 @@
                     "Replicator.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
                 "GPL-2.0",
@@ -130,7 +130,7 @@
                 "ext-gd": "*",
                 "ext-fileinfo": "*"
             },
-            "time": "1352418974",
+            "time": "2012-11-08 23:56:14",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -182,7 +182,6 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "nette/nette": 20,
         "kdyby/forms-replicator": 20,
         "kdyby/bootstrap-form-renderer": 20
     }
