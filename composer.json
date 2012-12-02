@@ -19,7 +19,6 @@
 	},
 	"require": {
 		"php": ">= 5.3.0",
-		"nette/nette": "@dev",
 		"kdyby/forms-replicator": "@dev",
 		"kdyby/bootstrap-form-renderer": "@dev"
 	}

@@ -2,22 +2,178 @@
     "hash": "01196fde3a60d39fcf94d8bc684801d4",
     "packages": [
         {
-            "package": "kdyby/bootstrap-form-renderer",
+            "name": "kdyby/bootstrap-form-renderer",
             "version": "dev-master",
-            "source-reference": "bce1db2fe07c22899e07605d58ce1dc9e3bf3409",
-            "commit-date": "1346950854"
+            "target-dir": "Kdyby/Extension/Forms/BootstrapRenderer",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kdyby/FormsBootstrapRendererExtension",
+                "reference": "8bce382f85c2d442491247952e479b58ba740fa1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/Kdyby/FormsBootstrapRendererExtension/archive/8bce382f85c2d442491247952e479b58ba740fa1.zip",
+                "reference": "8bce382f85c2d442491247952e479b58ba740fa1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "nette/nette": "*"
+            },
+            "conflict": {
+                "kdyby/framework": "self.version"
+            },
+            "time": "1349860238",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Kdyby\\Extension\\Forms\\BootstrapRenderer": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Procházka",
+                    "homepage": "http://filip-prochazka.com"
+                }
+            ],
+            "description": "Nette forms renderer with bootstrap",
+            "homepage": "http://kdyby.org",
+            "keywords": [
+                "bootstrap",
+                "Forms",
+                "nette",
+                "kdyby"
+            ]
         },
         {
-            "package": "kdyby/forms-replicator",
+            "name": "kdyby/forms-replicator",
             "version": "dev-master",
-            "source-reference": "7ae4bd3181443aca1a9a17e88b7a8df6324fd6f9",
-            "commit-date": "1346494553"
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kdyby/ReplicatorExtension",
+                "reference": "17757eff829e67a7f21f986aa5a99cafa5ded0b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/Kdyby/ReplicatorExtension/archive/17757eff829e67a7f21f986aa5a99cafa5ded0b3.zip",
+                "reference": "17757eff829e67a7f21f986aa5a99cafa5ded0b3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "nette/nette": "*"
+            },
+            "conflict": {
+                "kdyby/framework": "self.version"
+            },
+            "time": "1347014305",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "files": [
+                    "Replicator.php"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Filip Procházka",
+                    "homepage": "http://filip-prochazka.com"
+                }
+            ],
+            "description": "Nette forms container replicator",
+            "homepage": "http://kdyby.org",
+            "keywords": [
+                "Forms",
+                "nette",
+                "kdyby",
+                "replicator",
+                "addDynamic"
+            ]
         },
         {
-            "package": "nette/nette",
+            "name": "nette/nette",
             "version": "dev-master",
-            "source-reference": "c8578f2b0fb5c1310563a4ce2216facb76eebb5b",
-            "commit-date": "1346860759"
+            "source": {
+                "type": "git",
+                "url": "http://github.com/nette/nette",
+                "reference": "56b68abaf6a6c48196ffdddc7d8390a3bccc17a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/nette/nette/archive/56b68abaf6a6c48196ffdddc7d8390a3bccc17a0.zip",
+                "reference": "56b68abaf6a6c48196ffdddc7d8390a3bccc17a0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "ext-iconv": "*",
+                "ext-tokenizer": "*"
+            },
+            "require-dev": {
+                "nette/tester": "@dev"
+            },
+            "suggest": {
+                "ext-mbstring": "*",
+                "ext-pdo": "*",
+                "ext-memcache": "*",
+                "ext-gd": "*",
+                "ext-fileinfo": "*"
+            },
+            "time": "1352418974",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "files": [
+                    "Nette/loader.php"
+                ]
+            },
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "http://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "http://nette.org/contributors"
+                }
+            ],
+            "description": "Nette Framework - innovative framework for fast and easy development of secured web applications in PHP. Write less, have cleaner code and your work will bring you joy.",
+            "homepage": "http://nette.org",
+            "keywords": [
+                "templating",
+                "framework",
+                "database",
+                "dbal",
+                "debugging",
+                "mvc",
+                "micro",
+                "Forms",
+                "latte",
+                "neon",
+                "mailing",
+                "images"
+            ]
         }
     ],
     "packages-dev": null,
