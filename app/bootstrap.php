@@ -24,6 +24,8 @@ $configurator->createRobotLoader()
 	->addDirectory(LIBS_DIR)
 	->register();
 
+Kdyby\Replicator\Container::register();
+
 // Create Dependency Injection container from config.neon file
 $configurator->addConfig(__DIR__ . '/config/config.neon');
 $container = $configurator->createContainer();

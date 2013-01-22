@@ -52,7 +52,7 @@ class HomepagePresenter extends BasePresenter
 				->addRemoveOnClick($invalidateCallback);
 		}, 1);
 
-		/** @var \Kdyby\Extension\Forms\Replicator\Replicator $replicator */
+		/** @var \Kdyby\Replicator\Container $replicator */
 		$replicator->addSubmit('add', 'Přidat dalšího')
 			->addCreateOnClick($invalidateCallback);
 

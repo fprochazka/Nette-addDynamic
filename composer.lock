@@ -1,33 +1,31 @@
 {
-    "hash": "907079307421e6abf10be60a33d02759",
+    "hash": "b0bed19f6f0aa126162a389cf1faec6a",
     "packages": [
         {
             "name": "kdyby/bootstrap-form-renderer",
             "version": "dev-master",
-            "target-dir": "Kdyby/Extension/Forms/BootstrapRenderer",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Kdyby/FormsBootstrapRendererExtension",
-                "reference": "3bd15743e4f6bd9bfffffd3b134e91fb52af1e90"
+                "url": "https://github.com/Kdyby/BootstrapFormRenderer",
+                "reference": "0910dafa5568e1435d1ce5f76cbcbd3b90b191a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Kdyby/FormsBootstrapRendererExtension/archive/3bd15743e4f6bd9bfffffd3b134e91fb52af1e90.zip",
-                "reference": "3bd15743e4f6bd9bfffffd3b134e91fb52af1e90",
+                "url": "https://github.com/Kdyby/BootstrapFormRenderer/archive/0910dafa5568e1435d1ce5f76cbcbd3b90b191a0.zip",
+                "reference": "0910dafa5568e1435d1ce5f76cbcbd3b90b191a0",
                 "shasum": ""
             },
             "require": {
-                "nette/nette": "*"
+                "nette/nette": "@dev"
             },
-            "conflict": {
-                "kdyby/framework": "self.version"
+            "require-dev": {
+                "nette/tester": "@dev"
             },
-            "time": "2012-11-28 15:39:48",
+            "time": "2013-01-21 14:17:50",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
                 "psr-0": {
-                    "Kdyby\\Extension\\Forms\\BootstrapRenderer": ""
+                    "Kdyby\\BootstrapFormRenderer\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -56,28 +54,27 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Kdyby/ReplicatorExtension",
-                "reference": "cc66d03b822927027bf314843b36b162d5c57b15"
+                "url": "https://github.com/Kdyby/Replicator",
+                "reference": "7199469604c53d3e76f28ad4197b4172dad84198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/Kdyby/ReplicatorExtension/archive/cc66d03b822927027bf314843b36b162d5c57b15.zip",
-                "reference": "cc66d03b822927027bf314843b36b162d5c57b15",
+                "url": "https://github.com/Kdyby/Replicator/archive/7199469604c53d3e76f28ad4197b4172dad84198.zip",
+                "reference": "7199469604c53d3e76f28ad4197b4172dad84198",
                 "shasum": ""
             },
             "require": {
-                "nette/nette": "*"
+                "nette/nette": "@dev"
             },
-            "conflict": {
-                "kdyby/framework": "self.version"
+            "require-dev": {
+                "nette/tester": "@dev"
             },
-            "time": "2012-11-11 22:39:01",
+            "time": "2013-01-20 12:06:45",
             "type": "library",
-            "installation-source": "source",
             "autoload": {
-                "files": [
-                    "Replicator.php"
-                ]
+                "psr-0": {
+                    "Kdyby\\Replicator\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -91,7 +88,7 @@
                     "homepage": "http://filip-prochazka.com"
                 }
             ],
-            "description": "Nette forms container replicator",
+            "description": "Nette forms container replicator aka addDynamic",
             "homepage": "http://kdyby.org",
             "keywords": [
                 "Forms",
@@ -107,12 +104,12 @@
             "source": {
                 "type": "git",
                 "url": "http://github.com/nette/nette",
-                "reference": "ba87165c69a9b2a96c44fcc452e16d6d12515825"
+                "reference": "df78ce354eb148a313d8e3f9fb81bee464c4019e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/nette/nette/archive/ba87165c69a9b2a96c44fcc452e16d6d12515825.zip",
-                "reference": "ba87165c69a9b2a96c44fcc452e16d6d12515825",
+                "url": "https://github.com/nette/nette/archive/df78ce354eb148a313d8e3f9fb81bee464c4019e.zip",
+                "reference": "df78ce354eb148a313d8e3f9fb81bee464c4019e",
                 "shasum": ""
             },
             "require": {
@@ -130,14 +127,13 @@
                 "ext-gd": "*",
                 "ext-fileinfo": "*"
             },
-            "time": "2012-12-02 12:47:53",
+            "time": "2013-01-22 03:56:45",
             "type": "library",
             "extra": {
                 "branch-alias": {
                     "dev-master": "2.1-dev"
                 }
             },
-            "installation-source": "source",
             "autoload": {
                 "files": [
                     "Nette/loader.php"

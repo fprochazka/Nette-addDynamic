@@ -36,7 +36,7 @@ class TwBootstrapPresenter extends BasePresenter
 			$container->addSubmit("removeNode", "Odebrat uzel")
 				->addRemoveOnClick();
 		}, 2);
-		/** @var \Kdyby\Extension\Forms\Replicator\Replicator $nodes */
+		/** @var \Kdyby\Replicator\Container $nodes */
 
 		//button for adding a new node
 		$nodes->addSubmit("addNode", "Přidat uzel")
