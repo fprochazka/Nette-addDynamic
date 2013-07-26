@@ -1,6 +1,6 @@
 <?php
 
-use Kdyby\Extension\Forms\BootstrapRenderer\BootstrapRenderer;
+use Kdyby\BootstrapFormRenderer\BootstrapRenderer;
 use Nette\Forms\Container;
 use Nette\Application\UI\Form;
 
